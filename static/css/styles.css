@@ -115,4 +115,34 @@ th, td {
 
     text-align: center;
     justify-content: center;
+    padding: 20px;
+}
+
+
+.player-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.player-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+}
+
+.player-card h2 {
+    margin: 0 0 10px;
+    font-size: 18px;
+    color: #333;
+}
+
+.player-card p {
+    margin: 0;
+    font-size: 14px;
+    color: #666;
 }
