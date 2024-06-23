@@ -16,7 +16,6 @@
         <div class="dropdown">
             <button class="dropbtn">Countries</button>
             <div class="dropdown-content">
-
                 <a href="/stats">IND</a>
                 <a href="/sa">SA</a>
                 <a href="/aus">AUS</a>
@@ -34,15 +33,23 @@
                 <a href="/nep">NEP</a>
                 <a href="/zim">ZIM</a>
                 <a href="/sl">SL</a>
-
-
             </div>
         </div>
         <a href="/all">All</a>
+        <div id="searchbox_div">
+            <form method="post" action="/search">
+                <input type="text" name="Search" id="searchbox" placeholder="try 'Ind' or 'Aus'">
+                <input type="submit" value="Find" id="searchbtn">
+            </form>
+        </div>
     </div>
     <div class="content">
         {% block main %}
         {% endblock %}
     </div>
+
+    <footer>
+        <p>2024</p>
+    </footer>
 </body>
 </html>

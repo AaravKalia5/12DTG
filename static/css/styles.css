@@ -1,5 +1,5 @@
 body {
-    font-family: sans-serif, Arial;
+    font-family: Arial, sans-serif;
     margin: auto;
     padding: 0;
     background-color: #f4f4f4;
@@ -21,39 +21,29 @@ body {
 .nav {
     display: flex;
     justify-content: center;
+    align-items: center;
     background-color: #333;
+    padding: 0;
 }
 
-.nav a {
+.nav a, .nav .dropbtn, .nav form input[type="submit"] {
     padding: 14px 20px;
     display: block;
     color: white;
     text-align: center;
     text-decoration: none;
+    background-color: #333;
+    border: none;
+    cursor: pointer;
 }
 
-.nav a:hover {
-    background-color: #575757;
+.nav a:hover, .nav .dropbtn:hover, .nav form input[type="submit"]:hover {
+    background-color: black;
 }
-
-.content {
-    text-align: center;
-    justify-content: center;
-}
-
 
 .dropdown {
     position: relative;
     display: inline-block;
-}
-
-.dropbtn {
-    padding: 14px 20px;
-    color: white;
-    background-color: #333;
-    border: none;
-    cursor: pointer;
-    text-decoration: none;
 }
 
 .dropdown-content {
@@ -80,6 +70,33 @@ body {
     display: block;
 }
 
+#searchbox_div {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+
+#searchbox {
+    margin-top: 5px;
+    padding: 5px;
+    margin-right: 10px;
+    border: 4px solid #007bff;
+}
+
+#searchbtn {
+    padding: 10px ;
+    padding-left: -10px;
+    border: none;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+}
+
+#searchbtn:hover {
+    background-color: #575757;
+}
+
+
 table {
     width: 100%;
     border-collapse: collapse;
@@ -94,5 +111,8 @@ th, td {
     text-align: left;
 }
 
+.content {
 
-
+    text-align: center;
+    justify-content: center;
+}

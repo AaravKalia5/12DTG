@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request
 import sqlite3
 from sqlite3 import Error
 
@@ -315,6 +315,27 @@ def render_all_page():  # put application's code here
 
 
     return render_template('all.html', data=data_list)
+
+
+@app.route('/search', methods=['GET', 'POST'])
+def render_search_page():  # put application's code here
+
+    look_up = request.form['Search']
+    title = "Search for: '" + look_up + "' "
+    look_up = "%" + look_up + "%"
+
+    query = "SELECT Player, Country, Matches, Innings, Not_Outs, Runs, Ave, Balls_Faced, Strike_Rate, Hundreds ,Fiftys, Fours, Sixes, Ducks FROM cricket_table_data WHERE Player LIKE ? OR Country LIKE ? OR Matches LIKE ? OR Innings LIKE ? OR Not_Outs LIKE ? OR Runs LIKE ? OR Ave LIKE ? OR Balls_Faced LIKE ? OR Strike_Rate LIKE ? OR Hundreds LIKE ? OR Fiftys LIKE ? or Fours LIKE ? OR Sixes LIKE ? OR Ducks LIKE ?"
+
+    connection = create_connection(DATABASE)
+
+    cursor = connection.cursor()
+    cursor.execute(query, (look_up, look_up, look_up, look_up, look_up, look_up, look_up, look_up, look_up, look_up, look_up, look_up, look_up, look_up))
+
+    data_list = cursor.fetchall()
+
+
+
+    return render_template('all.html', data=data_list, page_title = title)
 
 if __name__ == '__main__':
     app.run()
