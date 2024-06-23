@@ -4,8 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cd2cf0f6-2d1c-4da2-a3ec-d8860e6b88a6" name="Changes" comment="I used jinja to make it eaiser to controll all html pages at once.">
+    <list default="true" id="cd2cf0f6-2d1c-4da2-a3ec-d8860e6b88a6" name="Changes" comment="I have imported the data to the database manualy and I also made the database itself with all the coulloms and tables.">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/74e6e7c5-3cab-4a10-9ff8-6a208d617415.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/74e6e7c5-3cab-4a10-9ff8-6a208d617415.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/all.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/all.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,7 +95,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1719096286526</updated>
-      <workItem from="1719096289049" duration="5226000" />
+      <workItem from="1719096289049" duration="8013000" />
     </task>
     <task id="LOCAL-00001" summary="initial push">
       <option name="closed" value="true" />
@@ -124,7 +129,15 @@
       <option name="project" value="LOCAL" />
       <updated>1719100855891</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="I have imported the data to the database manualy and I also made the database itself with all the coulloms and tables.">
+      <option name="closed" value="true" />
+      <created>1719102550429</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1719102550429</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -135,9 +148,10 @@
     <MESSAGE value="I added my html css from vs studio code, and I added the app routes to run them." />
     <MESSAGE value="I removed all .html from the html links and made it /..." />
     <MESSAGE value="I used jinja to make it eaiser to controll all html pages at once." />
-    <option name="LAST_COMMIT_MESSAGE" value="I used jinja to make it eaiser to controll all html pages at once." />
+    <MESSAGE value="I have imported the data to the database manualy and I also made the database itself with all the coulloms and tables." />
+    <option name="LAST_COMMIT_MESSAGE" value="I have imported the data to the database manualy and I also made the database itself with all the coulloms and tables." />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/12DTS$12DTS.coverage" NAME="12DTS Coverage Results" MODIFIED="1719100725941" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/12DTS$12DTS.coverage" NAME="12DTS Coverage Results" MODIFIED="1719104958371" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
