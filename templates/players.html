@@ -1,6 +1,24 @@
 {% extends "base.html" %}
 {% block main %}
 
-            <h1>Players</h1>
+    <h1>Players</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <td>Player</td>
+                <td>Country</td>
+            </tr>
+        </thead>
+
+        <tbody>
+            {% for row in data %}
+                <tr>
+                    <td>{{ row[0] }}</td>
+                    <td>{{ row[1] }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
 
 {% endblock %}

@@ -1,9 +1,9 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: sans-serif, Arial;
     margin: auto;
     padding: 0;
     background-color: #f4f4f4;
-    width: 1320px;
+    width: 1280px;
 }
 
 .header {
@@ -37,6 +37,62 @@ body {
 }
 
 .content {
-    padding: 20px;
     text-align: center;
+    justify-content: center;
 }
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    padding: 14px 20px;
+    color: white;
+    background-color: #333;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #575757;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 2px solid black;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+}
+
+
+
